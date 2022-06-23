@@ -1,0 +1,241 @@
+/* display background color black on navbar scroll */
+.navbarScroll.navbarDark {
+    background-color: black;
+}
+body{
+  background-color: #282e28;
+  color: #000000;
+}
+/* hero background image */
+.bgPhoto{
+    height:100vh;
+    background: url('images/full-stack-development.gif');
+    background-size:cover;
+    position:relative;
+}
+
+video { /* This is to make the video appear behind everything else */
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding-left: none;
+  margin-left: none;
+  bottom: 0;
+  z-index: -1;
+  
+}
+
+.content { /* This is for the content */
+  position: fixed;
+  z-index: 1; /* This can be set to any number greater than -1000. */
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+/* text css above hero image*/
+.hero_title {
+    font-size: 4.5rem;
+}
+.hero_desc {
+    font-size: 2rem;
+}
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+
+}
+.container-sm {
+ 
+  text-align: center;
+}
+
+
+.navbar-nav li{
+  padding: 0.5rem;
+}
+
+/* spacing on all sections */
+/* #about, #services, #portfolio, #contact {
+    margin-top: 4rem;
+    padding-top: 4rem;
+} */
+#contact {
+    
+    padding-bottom: 1rem;
+   
+}
+/* about section image css */
+.imageAboutPage {
+    width: 100%;
+}
+
+.imageSkillsPage{
+  width: 100%;
+  float : right;
+}
+
+/* services section css */
+.servicesText.card {
+    height: 280px;
+    cursor: pointer;
+  }
+.servicesIcon {
+    font-size: 36px;
+    text-align: center;
+    width: 100%;
+}
+.card-title {
+    text-align: center;
+}
+.card:hover .servicesIcon {
+    color: #f07768a6;
+}
+.servicesText:hover {
+    border: 1px solid #f07768a6;
+}
+
+/* social media icons styling */
+.social-icons {
+    font-size: 36px;
+    cursor: pointer;
+}
+.fa-facebook:hover,.fa-instagram:hover,.fa-twitter:hover,.fa-linkedin:hover, .fa-twitch:hover {
+    color: #282e28;
+}
+.fab {
+    color: #000000;
+}
+/* footer styling */
+#footer {
+    background-color: #808080;
+    text-align: center;
+}
+
+#about,#services,#portfolio,#skill,#work{
+    margin-top: 4rem;
+    padding-top: 4rem;
+    margin-bottom: 4rem;
+    padding-bottom: 4rem;
+}
+
+.progress {
+    border-radius: 10px;
+  }
+  
+  .progress .progress-bar {
+    width: 0px;
+    border-radius: 10px;
+    transition: 2s;
+  }
+
+  .carousel-inner{
+    margin-top: 2.5rem;
+    padding-top: 2.5rem;
+  }
+/*Glitch effect*/
+
+  
+/* :root {
+    --background: #060608;
+    --color: #FAFAFA;
+  }
+  
+  
+  */
+  
+  .row-container {
+    color: var(--color);
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+  
+  }
+  
+
+  
+  .right {
+    text-align: right;
+    width: 100%;
+  }
+  
+  .stack {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  
+  .stack span {
+    font-weight: bold;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    font-size: 4.5rem;
+    --stack-height: calc(100% / var(--stacks) - 1px);
+    --inverse-index: calc(calc(var(--stacks) - 1) - var(--index));
+    --clip-top: calc(var(--stack-height) * var(--index));
+    --clip-bottom: calc(var(--stack-height) * var(--inverse-index));
+    clip-path: inset(var(--clip-top) 0 var(--clip-bottom) 0);
+    animation: stack 340ms cubic-bezier(.146,.29,0,1.24) 1 backwards calc(var(--index) * 20ms), glitch 1s ease infinite 1s alternate-reverse;
+  }
+  
+  .stack span:nth-child(odd) { --glitch-translate: 8px; }
+  .stack span:nth-child(even) { --glitch-translate: -8px; }
+  
+  @keyframes stack {
+    0% {
+      opacity: 0;
+      transform: translateX(-50%);
+      text-shadow: -2px 3px 0 red, 2px -3px 0 blue;
+    };
+    60% {
+      opacity: 0.5;
+      transform: translateX(50%);
+    }
+    80% {
+      transform: none;
+      opacity: 1;
+      text-shadow: 2px -3px 0 red, -2px 3px 0 blue;
+    }
+    100% {
+      text-shadow: none;
+    }
+  }
+  
+  @keyframes glitch {
+    0% {
+      text-shadow: -2px 3px 0 red, 2px -3px 0 blue;
+      transform: translate(var(--glitch-translate));
+    }
+    2% {
+      text-shadow: 2px -3px 0 red, -2px 3px 0 blue;
+    }
+    4%, 100% {  text-shadow: none; transform: none; }
+  }
+
+/*Glitch effect*/
+
+.carousel-item img {
+  width: 78%!important;
+  height:390px;
+  align-items: center;
+  margin: auto;
+}
+.carousel-item h5, .carousel-item p{
+  color:black;
+   font-weight: strong;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+   filter: invert(1); 
+   size: 12px;
+  }
